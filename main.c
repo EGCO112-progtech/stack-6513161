@@ -23,10 +23,10 @@ int main(int argc, char **argv){
           }
         }    
       
-      if(error1==1 && error2==1 && error3!=1 && (strlen)(argv[i])%2==0)
+      if(error1==1 && error2==1 && error3!=1)
         printf("argv %d correct\n",i);
-      else if(error1==1 && error2==1 && error3==1 && (strlen)(argv[i])%2==0)
-        printf("argv %d mismatch\n",i);
+      else if(error1==1 && error2==1 && error3==1)
+        printf("argv %d incorrect: mismatch\n",i);
       else if(error1==1 && (error2==0 || error3==0))
         printf("argv %d incorrect: too many open parenthesis\n",i);
       else 
